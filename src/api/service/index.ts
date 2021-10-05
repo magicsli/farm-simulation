@@ -80,11 +80,11 @@ class Http {
     })
   }
 
-  checkOnline() {
+  checkOnline():boolean {
     return navigator.onLine
   }
 
-  protected onRejectedIntercept(err: any) {
+  protected onRejectedIntercept(err: any):unknown {
     try {
       const {
         response: { status }
@@ -124,7 +124,7 @@ class Http {
     return response
   }
 
-  protected resFilter<T>(p: AxiosPromise): Promise<Response<T>> {
+  protected resFilter<T>(p: AxiosPromise<Response<T>>): Promise<Response<T>> {
     return new Promise<Response<T>>((resolve, reject) => {
       p.then(res => {
         if (res.data.code === RESPONSE_CODE.success) {
