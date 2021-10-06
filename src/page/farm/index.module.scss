@@ -1,0 +1,107 @@
+
+$plotHeight: 53px;
+$plotWidth: $plotHeight * 1.892;
+
+.farm {
+	position: relative;
+	margin: 0 auto;
+	width: 1393px;
+	height: 783px;
+	background: url('@/assets/img/farm/farm_daytime.jpg');
+
+	.plot-item {
+		width: $plotWidth;
+		height: $plotHeight;
+		top: 280px;
+		left: 560px;
+		&:hover{
+			img {
+				transition: all .3s;
+				transform: scale(1.1);
+			}
+		}
+
+		&:nth-child(2){
+			transform: translate(-50%, 50%);
+		}
+		&:nth-child(3){
+			transform: translate(-100%, 100%);
+		}
+		&:nth-child(4){
+			transform: translate(-150%, 150%);
+		}
+
+		&:nth-child(5){
+			transform: translate(50%, 50%);
+		}
+		&:nth-child(6){
+			transform: translate(0, 100%);
+
+		}
+		&:nth-child(7){
+			transform: translate(-50%, 150%);
+		}
+		&:nth-child(8){
+			transform: translate(-100%, 200%);
+		}
+
+
+		&:nth-child(9){
+			transform: translate(100%, 100%);
+		}
+		&:nth-child(10){
+			transform: translate(50%, 150%);
+
+		}
+		&:nth-child(11){
+			transform: translate(0%, 200%);
+		}
+		&:nth-child(12){
+			transform: translate(-50%, 250%);
+		}
+
+
+		&:nth-child(13){
+			transform: translate(150%, 150%);
+		}
+		&:nth-child(14){
+			transform: translate(100%, 200%);
+
+		}
+		&:nth-child(15){
+			transform: translate(50%, 250%);
+		}
+		&:nth-child(16){
+			transform: translate(0%, 300%);
+		}
+
+		&:nth-child(17){
+			transform: translate(200%, 200%);
+		}
+		&:nth-child(18){
+			transform: translate(150%, 250%);
+
+		}
+		&:nth-child(19){
+			transform: translate(100%, 300%);
+		}
+		&:nth-child(20){
+			transform: translate(50%, 350%);
+		}
+
+		&:nth-child(21){
+			transform: translate(250%, 250%);
+		}
+		&:nth-child(22){
+			transform: translate(200%, 300%);
+
+		}
+		&:nth-child(23){
+			transform: translate(150%, 350%);
+		}
+		&:nth-child(24){
+			transform: translate(100%, 400%);
+		}
+	}
+}
+
